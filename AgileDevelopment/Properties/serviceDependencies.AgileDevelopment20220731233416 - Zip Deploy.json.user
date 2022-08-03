@@ -1,0 +1,54 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": false,
+      "restoreTime": "2022-07-31T20:45:32.6924149Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2022-07-31T21:27:25.83914Z"
+    }
+  },
+  "parameters": {
+    "AgileDevelopment20220731233416.resourceGroupLocation": {
+      "Name": "AgileDevelopment20220731233416.resourceGroupLocation",
+      "Type": null,
+      "Value": "centralus"
+    },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "centralus"
+    },
+    "AgileDevelopment20220731233416.resourceGroupName": {
+      "Name": "AgileDevelopment20220731233416.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "VstsRG-AgileDevelopment-0da9"
+    },
+    "AgileDevelopment20220731233416.resourceName": {
+      "Name": "AgileDevelopment20220731233416.resourceName",
+      "Type": null,
+      "Value": "AgileDevelopment20220731233416"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "VstsRG-AgileDevelopment-0da9"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "af018f77-873b-442e-a97b-6c1946c79c7d"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "af018f77-873b-442e-a97b-6c1946c79c7d"
+    },
+    "AgileDevelopment20220731233416.subscriptionId": {
+      "Name": "AgileDevelopment20220731233416.subscriptionId",
+      "Type": "subscription",
+      "Value": "af018f77-873b-442e-a97b-6c1946c79c7d"
+    }
+  }
+}

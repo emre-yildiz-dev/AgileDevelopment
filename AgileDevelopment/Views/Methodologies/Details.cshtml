@@ -1,0 +1,63 @@
+﻿@model AgileDevelopment.Models.Methodology
+
+@{
+	ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+	<h4>Methodology</h4>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Title)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Title)
+		</dd>
+		<dt class="col-sm-2">
+			@Html.DisplayNameFor(model => model.Description)
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.Description)
+		</dd>
+	</dl>
+</div>
+<div>
+	<a asp-action="Edit" asp-route-id="@Model?.MethodologyID">Edit</a> |
+	<a asp-action="Index">Back to List</a>
+</div>
+<div>
+	<a asp-controller="Members" asp-action="ListMembers" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary">
+		@Html.DisplayFor(model => model.Title) Members</button>
+	</a>
+
+
+	<a asp-controller="Principles" asp-action="ListPrinciples" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary" >
+		@Html.DisplayFor(model => model.Title) Principles</button>
+	</a>
+
+
+	<a asp-controller="Tests" asp-action="ListTests" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary">
+		@Html.DisplayFor(model => model.Title) Tests</button>
+	</a>
+
+
+	<a asp-controller="Practices" asp-action="ListPractices" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary">
+		@Html.DisplayFor(model => model.Title) Practices</button>
+	</a>
+
+
+	<a asp-controller="MethodFrameworks" asp-action="ListMethodFrameworks" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary">
+		@Html.DisplayFor(model => model.Title) Method Frameworks</button>
+	</a>
+	<a asp-controller="Wisesayings" asp-action="ListWiseSayings" asp-route-id="@Model?.MethodologyID"><button class="btn btn-primary">
+		@Html.DisplayFor(model => model.Title) Wise Sayings</button>
+	</a>
+</div>
+
+
+
+
+

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<AgileDevelopment.Models.Member>
+
+@{
+	ViewData["Title"] = "Members";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<p>
+	<a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Title)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Description)
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					<a asp-action="Details" asp-route-id="@item.MemberID">@Html.DisplayFor(modelItem => item.Title)</a>
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Description)
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.MemberID">Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.MemberID">Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.MemberID">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+
+</table>
+<div>
+	<a asp-controller="Methodologies" asp-action="Index">Back_to_Home</a>
+</div>
